@@ -12,7 +12,7 @@ let usermail;
 const id = Symbol('123')
 const anotherid = Symbol('123')
 
-console.log(id === anotherid);
+// console.log(id === anotherid);
 
 // Reference datatypes
 
@@ -28,4 +28,26 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof heros);
+// console.log(typeof heros);
+//================================
+
+// Stack(Primitive), Heap (Non-Primitive)
+
+let myYoutubename = "shivamvermadotcom"
+
+let anothername = myYoutubename
+anothername = "Chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne
+
+userTwo.email = "shivam@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
